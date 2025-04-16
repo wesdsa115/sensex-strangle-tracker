@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sensex Strangle Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sensex Strangle Tracker</h1>
+    <form id="tradeForm">
+      <label>Week:</label>
+      <input type="text" id="week" required />
+      <label>Premium Collected (₹):</label>
+      <input type="number" id="premium" required />
+      <label>Profit or Loss (₹):</label>
+      <input type="number" id="pnl" required />
+      <button type="submit">Add Trade</button>
+    </form>
+    <table id="tradeTable">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Premium Collected</th>
+          <th>P&L</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="summary"></div>
+  </div>
+  <script src="tracker.js"></script>
+</body>
+</html>
